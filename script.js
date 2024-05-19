@@ -4,6 +4,7 @@ const triviaQuestion = async () => {
     const response = await fetch("https://opentdb.com/api.php?amount=30");
     const data = await response.json();
     const newData = data.results;
+    // console.log(newData);
 
     newData.map((item) => {
       const newTask = document.createElement("tr");
@@ -12,7 +13,7 @@ const triviaQuestion = async () => {
             <td>${item.type}</td>
             <td>${item.difficulty}</td>
             <td>${item.question}</td>
-            <td>${item.correct_answer}</td>
+            <td class='answer'>${item.correct_answer}</td>
             `;
       questionBody.appendChild(newTask);
     });
