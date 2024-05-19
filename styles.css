@@ -2,6 +2,7 @@
     box-sizing: border-box;
     background: #383E4E;
     font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: white;
 
 }
 
@@ -11,22 +12,18 @@ h1 {
 }
 
 table {
-
+    border: 1px solid #464545;
     max-width: 70rem;
-    color: white;
     margin: 0 auto;
-
-
-
 }
 
 th,
 td {
+
     padding: 8px;
     line-height: 1.42857143;
     text-align: left;
-    display: table-cell;
-    border: 1px solid #2c2c2c;
+
 
 }
 
@@ -40,8 +37,17 @@ td {
     background: #1B1B1B;
     vertical-align: top;
     text-transform: capitalize;
+
 }
 
 .answer {
     color: #0ce3ac;
+}
+
+@media (max-width: 1000px) {
+    .table-small-screen {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        max-width: 50rem;
+    }
 }
