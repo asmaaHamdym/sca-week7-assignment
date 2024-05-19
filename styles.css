@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     background: #383E4E;
+    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
 
 }
 
@@ -10,10 +11,10 @@ h1 {
 }
 
 table {
+
     max-width: 70rem;
-    border: 1px solid #464545;
     color: white;
-    margin: 10px auto;
+    margin: 0 auto;
 
 
 
@@ -21,16 +22,24 @@ table {
 
 th,
 td {
-    background: #2C2C2C;
     padding: 8px;
     line-height: 1.42857143;
     text-align: left;
-    vertical-align: bottom;
     display: table-cell;
+    border: 1px solid #2c2c2c;
+
+}
+
+th {
+    background: #2C2C2C;
+    vertical-align: bottom;
+
 }
 
 td {
     background: #1B1B1B;
+    vertical-align: top;
+    text-transform: capitalize;
 }
 
 .answer {
