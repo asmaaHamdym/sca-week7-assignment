@@ -12,7 +12,7 @@ const triviaQuestion = async () => {
             <td>${item.type}</td>
             <td>${item.difficulty}</td>
             <td>${item.question}</td>
-            <td>${item.correct_answer}</td>
+            <td class='answer'>${item.correct_answer}</td>
             `;
       questionBody.appendChild(newTask);
     });
